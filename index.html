@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <title>3D 模型預覽</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- 載入 model-viewer 套件 -->
-    <script type="module" src="untitled.glb"></script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <style>
       body {
         margin: 0;
@@ -32,7 +31,7 @@
   <body>
     <h1>3D 模型預覽</h1>
     <model-viewer
-      src="model.glb"  <!-- 這裡換成你的 .glb 或完整網址 -->
+      src="model.glb"
       ar
       ar-modes="scene-viewer quick-look webxr"
       environment-image="neutral"
