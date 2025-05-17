@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8">
+    <title>3D 模型預覽</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 載入 model-viewer 套件 -->
+    <script type="module" src="https://northengineer.github.io/3d-ar-viewer/"></script>
+    <style>
+      body {
+        margin: 0;
+        background-color: #f0f0f0;
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+      model-viewer {
+        width: 100%;
+        max-width: 600px;
+        height: 80vh;
+      }
+      h1 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+        color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>3D 模型預覽</h1>
+    <model-viewer
+      src="model.glb"  <!-- 這裡換成你的 .glb 或完整網址 -->
+      ar
+      ar-modes="scene-viewer quick-look webxr"
+      environment-image="neutral"
+      auto-rotate
+      camera-controls
+      shadow-intensity="1">
+    </model-viewer>
+  </body>
+</html>
